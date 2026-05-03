@@ -1,0 +1,147 @@
+{
+  "site": {
+    "title": "Forever In Our Hearts",
+    "subtitle": "A farewell to the ones who made every moment unforgettable",
+    "year": "2026",
+    "batch": "Batch of  2026",
+    "institution": "public college samana"
+  },
+  "hero": {
+    "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
+    "videoFallback": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+    "tagline": "Not goodbye — just until we meet again",
+    "overlayOpacity": 0.6
+  },
+  "memories": [
+    {
+      "id": 1,
+      "line": "We came as strangers.",
+      "delay": 0
+    },
+    {
+      "id": 2,
+      "line": "We left as family.",
+      "delay": 0.3
+    },
+    {
+      "id": 3,
+      "line": "Every late night, every shared laugh, every whispered secret —",
+      "delay": 0.6
+    },
+    {
+      "id": 4,
+      "line": "these walls held them all.",
+      "delay": 0.9
+    },
+    {
+      "id": 5,
+      "line": "Now we carry each other forward.",
+      "delay": 1.2
+    },
+    {
+      "id": 6,
+      "line": "Into the world. Into the unknown.",
+      "delay": 1.5
+    },
+    {
+      "id": 7,
+      "line": "But never alone.",
+      "delay": 1.8
+    }
+  ],
+  "photos": [],
+  "videos": [
+    {
+      "id": 1,
+      "title": "A Farewell to Remember",
+      "description": "Captured moments and heartfelt goodbyes from our journey together.",
+      "youtubeId": "mVa4z0wyZWE",
+      "thumbnail": "https://img.youtube.com/vi/mVa4z0wyZWE/maxresdefault.jpg",
+      "duration": "4:12"
+    },
+    {
+      "id": 2,
+      "title": "The Last Walkthrough",
+      "description": "Revisiting the places and people that made these years special.",
+      "youtubeId": "mVa4z0wyZWE",
+      "thumbnail": "https://img.youtube.com/vi/mVa4z0wyZWE/sddefault.jpg",
+      "duration": "3:45"
+    },
+    {
+      "id": 3,
+      "title": "Batch of 2026",
+      "description": "Voices, laughter, and memories that will last a lifetime.",
+      "youtubeId": "mVa4z0wyZWE",
+      "thumbnail": "https://img.youtube.com/vi/mVa4z0wyZWE/hqdefault.jpg",
+      "duration": "5:20"
+    }
+  ],
+  "quotes": [
+    {
+      "id": 1,
+      "text": "The best is yet to come, and won't that be fine.",
+      "author": "Frank Sinatra"
+    },
+    {
+      "id": 2,
+      "text": "Don't cry because it's over. Smile because it happened.",
+      "author": "Dr. Seuss"
+    },
+    {
+      "id": 3,
+      "text": "How lucky I am to have something that makes saying goodbye so hard.",
+      "author": "A.A. Milne"
+    }
+  ],
+  "team": [
+    {
+      "id": 1,
+      "name": "Alex Morgan",
+      "role": "Class President",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
+      "memory": "Led us through every storm with grace"
+    },
+    {
+      "id": 2,
+      "name": "Jordan Lee",
+      "role": "Vice President",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+      "memory": "Always the first to make everyone laugh"
+    },
+    {
+      "id": 3,
+      "name": "Sam Chen",
+      "role": "Secretary",
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
+      "memory": "Kept our memories alive through every note"
+    },
+    {
+      "id": 4,
+      "name": "Riley Kim",
+      "role": "Treasurer",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
+      "memory": "Made the impossible happen on every budget"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Prof. Alan Smith",
+      "role": "HOD Computer Science",
+      "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
+      "memory": "Taught us that bugs are just unexpected features"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Sarah Jenkins",
+      "role": "Professor of Mathematics",
+      "avatar": "https://images.unsplash.com/photo-1544717302-de2939b7ef71?w=400&q=80",
+      "memory": "Made calculus feel like a walk in the park"
+    }
+  ],
+  "music": {
+    "url": "/audio/your-song.mp3",
+    "title": "Yaar Jigree Kasooti Degree",
+    "artist": " Sharry Mann "
+  }
+}

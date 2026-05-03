@@ -1,0 +1,10 @@
+{
+  "name": "farewell-root-proxy",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix farewell-site",
+    "build": "npm run build --prefix farewell-site",
+    "preview": "npm run preview --prefix farewell-site",
+    "install": "npm install --prefix farewell-site"
+  }
+}
