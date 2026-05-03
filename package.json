@@ -6,5 +6,8 @@
     "build": "npm run build --prefix farewell-site",
     "preview": "npm run preview --prefix farewell-site",
     "install": "npm install --prefix farewell-site"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
