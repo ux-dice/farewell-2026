@@ -10,32 +10,27 @@ export default function MusicPlayer() {
   const ringsRef = useRef([])
 
   useEffect(() => {
-    const musicUrl = content.music.url.startsWith('http') 
-      ? content.music.url 
-      : `${import.meta.env.BASE_URL}${content.music.url}`
-      
-    audioRef.current = new Audio(musicUrl)
-    audioRef.current.loop = true
-    audioRef.current.volume = 0.3
-
+    // Show player after delay
     setTimeout(() => setVisible(true), 4000)
-
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause()
-        audioRef.current = null
-      }
+    if (audioRef.current) {
+      audioRef.current.volume = 0.6
     }
   }, [])
 
   const toggle = () => {
     if (!audioRef.current) return
+    
     if (playing) {
       audioRef.current.pause()
       setPlaying(false)
     } else {
-      audioRef.current.play().catch(() => {})
-      setPlaying(true)
+      audioRef.current.play()
+        .then(() => {
+          setPlaying(true)
+        })
+        .catch(err => {
+          console.error("Playback failed:", err)
+        })
     }
   }
 
@@ -64,8 +59,21 @@ export default function MusicPlayer() {
 
   if (!visible) return null
 
+  const musicUrl = content.music.url.startsWith('http') 
+    ? content.music.url 
+    : `${import.meta.env.BASE_URL}${content.music.url}`
+
   return (
     <div className="fixed bottom-8 right-8 z-[1001] flex items-center gap-4">
+      {/* Hidden Audio Element */}
+      <audio 
+        ref={audioRef} 
+        src={musicUrl} 
+        loop 
+        onPlay={() => setPlaying(true)}
+        onPause={() => setPlaying(false)}
+      />
+
       {/* Song Info (Premium Glass Panel) */}
       <div className="glass px-4 py-2 rounded-2xl border border-gold/20 flex flex-col items-end">
         <p className="font-sans text-sm text-white/90 truncate max-w-[150px] sm:max-w-[200px]">
