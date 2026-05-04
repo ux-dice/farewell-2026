@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import chokidar from 'chokidar'
 
 export default defineConfig({
+  base: '/farewell-2026/',
   plugins: [
     react(),
     {
