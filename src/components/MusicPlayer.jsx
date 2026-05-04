@@ -18,19 +18,15 @@ export default function MusicPlayer() {
   }, [])
 
   const toggle = () => {
-    if (!audioRef.current) return
+    const audio = audioRef.current
+    if (!audio) return
     
-    if (playing) {
-      audioRef.current.pause()
-      setPlaying(false)
+    if (audio.paused) {
+      audio.play()
+      setPlaying(true)
     } else {
-      audioRef.current.play()
-        .then(() => {
-          setPlaying(true)
-        })
-        .catch(err => {
-          console.error("Playback failed:", err)
-        })
+      audio.pause()
+      setPlaying(false)
     }
   }
 
@@ -70,6 +66,7 @@ export default function MusicPlayer() {
         ref={audioRef} 
         src={musicUrl} 
         loop 
+        preload="auto"
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
       />
