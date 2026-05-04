@@ -10,7 +10,11 @@ export default function MusicPlayer() {
   const ringsRef = useRef([])
 
   useEffect(() => {
-    audioRef.current = new Audio(content.music.url)
+    const musicUrl = content.music.url.startsWith('http') 
+      ? content.music.url 
+      : `${import.meta.env.BASE_URL}${content.music.url}`
+      
+    audioRef.current = new Audio(musicUrl)
     audioRef.current.loop = true
     audioRef.current.volume = 0.3
 

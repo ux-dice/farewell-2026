@@ -140,7 +140,7 @@
     }
   ],
   "music": {
-    "url": "/audio/your-song.mp3",
+    "url": "audio/your-song.mp3",
     "title": "Yaar Jigree Kasooti Degree",
     "artist": " Sharry Mann "
   }
