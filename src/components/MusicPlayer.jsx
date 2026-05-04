@@ -12,8 +12,27 @@ export default function MusicPlayer() {
   useEffect(() => {
     // Show player after delay
     setTimeout(() => setVisible(true), 4000)
-    if (audioRef.current) {
-      audioRef.current.volume = 0.6
+    
+    // iOS Audio Unlocker: The first time the user touches the screen, 
+    // we "prime" the audio element so it's allowed to play later.
+    const unlockAudio = () => {
+      if (audioRef.current) {
+        audioRef.current.play().then(() => {
+          audioRef.current.pause()
+          window.removeEventListener('touchstart', unlockAudio)
+          window.removeEventListener('click', unlockAudio)
+        }).catch(() => {
+          // Still locked or failed, but we tried
+        })
+      }
+    }
+
+    window.addEventListener('touchstart', unlockAudio)
+    window.addEventListener('click', unlockAudio)
+
+    return () => {
+      window.removeEventListener('touchstart', unlockAudio)
+      window.removeEventListener('click', unlockAudio)
     }
   }, [])
 
@@ -22,8 +41,14 @@ export default function MusicPlayer() {
     if (!audio) return
     
     if (audio.paused) {
-      audio.play()
-      setPlaying(true)
+      const playPromise = audio.play()
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          setPlaying(true)
+        }).catch(error => {
+          console.error("Playback failed:", error)
+        })
+      }
     } else {
       audio.pause()
       setPlaying(false)
