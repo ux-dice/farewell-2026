@@ -76,12 +76,7 @@ export default function FooterSection() {
           </button>
         </div>
 
-        {/* The End Signature */}
-        <div className="mt-32 mb-16 opacity-20 hover:opacity-100 transition-opacity duration-1000">
-          <span className="font-display text-4xl text-white italic tracking-widest">
-            Fin.
-          </span>
-        </div>
+
 
         {/* Developer Credit */}
         <div className="mt-20 pt-12 border-t border-white/5 flex flex-col items-center justify-center group">
@@ -94,6 +89,30 @@ export default function FooterSection() {
             <span className="font-mono text-[8px] tracking-[0.5em] uppercase text-white/60">
               Designed with Passion & Purpose
             </span>
+          </div>
+
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-12 h-px bg-gradient-to-r from-transparent to-gold/20" />
+            <div className="flex flex-col items-center group/karuna-name">
+              <div className="relative">
+                {/* Floating Specs Animation */}
+                <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/karuna-name:opacity-100 group-hover/karuna-name:-top-5 transition-all duration-500 ease-out pointer-events-none filter drop-shadow-[0_0_10px_rgba(212,175,55,0.5)]">
+                  <span className="text-2xl">🕶️</span>
+                </div>
+                
+                <a 
+                  href="https://www.instagram.com/karuna_sharma10?utm_source=qr&igsh=bzVpM2N6NXozcGVp" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-display text-2xl md:text-4xl text-white/60 group-hover/karuna-name:text-gold transition-colors duration-700 tracking-widest italic relative z-10"
+                  data-cursor
+                >
+                  Karuna Sharma
+                </a>
+              </div>
+              <span className="font-mono text-[7px] text-white/20 tracking-[0.3em] uppercase mt-1 group-hover/karuna-name:text-gold/40 transition-colors duration-700">Special Mention</span>
+            </div>
+            <div className="w-12 h-px bg-gradient-to-l from-transparent to-gold/20" />
           </div>
 
           <div className="flex items-center gap-3 mb-4">
@@ -111,6 +130,13 @@ export default function FooterSection() {
           </div>
           
           <div className="relative group/name cursor-pointer">
+            {/* Creative Floating Icons */}
+            <div className="absolute -top-12 left-0 w-full flex justify-around opacity-0 group-hover/name:opacity-100 group-hover/name:-top-16 transition-all duration-700 pointer-events-none">
+              <span className="text-xl animate-bounce delay-100">🎨</span>
+              <span className="text-xl animate-pulse delay-300">🚀</span>
+              <span className="text-xl animate-bounce delay-500">🪄</span>
+            </div>
+
             {/* Liquid Gold Shimmer Effect */}
             <a 
               href="https://www.instagram.com/astron_dice?igsh=Mzl5eGt2a29zczc4" 
@@ -127,8 +153,13 @@ export default function FooterSection() {
               <div className="absolute inset-0 -z-10 blur-3xl opacity-0 group-hover/name:opacity-100 transition-opacity duration-1000 bg-gold/20 rounded-full scale-150" />
             </a>
 
+            {/* Creative Tagline */}
+            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover/name:opacity-100 transition-all duration-700 whitespace-nowrap">
+              <span className="font-mono text-[6px] tracking-[0.6em] text-gold uppercase">Digital Architect • Creative Soul</span>
+            </div>
+
             {/* Cinematic Underline */}
-            <div className="mt-6 flex justify-center items-center gap-0 overflow-hidden">
+            <div className="mt-8 flex justify-center items-center gap-0 overflow-hidden">
               <div className="h-[1px] w-0 group-hover/name:w-32 bg-gradient-to-r from-transparent to-gold transition-all duration-1000 ease-out" />
               <div className="w-1.5 h-1.5 rotate-45 border border-gold scale-0 group-hover/name:scale-100 transition-transform duration-700 delay-300" />
               <div className="h-[1px] w-0 group-hover/name:w-32 bg-gradient-to-l from-transparent to-gold transition-all duration-1000 ease-out" />

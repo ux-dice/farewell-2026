@@ -25,6 +25,7 @@ import InteractiveGallerySection from './sections/InteractiveGallerySection'
 import QuotesSection from './sections/QuotesSection'
 import FooterSection from './sections/FooterSection'
 import BatchStats from './components/BatchStats'
+import RotatingNames from './components/RotatingNames'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -108,6 +109,14 @@ export default function App() {
           </div>
 
           <QuotesSection />
+
+          {/* Separator */}
+          <div className="flex justify-center py-4">
+            <div className="w-px h-24 bg-gradient-to-b from-transparent via-gold/20 to-transparent" />
+          </div>
+
+          {/* Rotating Names Section */}
+          <RotatingNames />
         </main>
 
         <FooterSection />

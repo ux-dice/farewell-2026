@@ -143,5 +143,21 @@
     "url": "audio/your-song.mp3",
     "title": "Yaar Jigree Kasooti Degree",
     "artist": " Sharry Mann "
+  },
+  "majdoor": {
+    "heading": "Our Majdoor",
+    "seniors": [
+      { "name": "Mohit Pathak" },
+      { "name": "Punarjeet Singh" }
+    ],
+    "juniors": [
+      { "name": "Husanpreet Singh" },
+      { "name": "Gautam Wadhwa" },
+      { "name": "Navroop" },
+      { "name": "Chhavi" },
+      { "name": "Rehmat Sandhu" },
+      { "name": "Kartik Mehra" },
+      { "name": "Yash" }
+    ]
   }
 }
