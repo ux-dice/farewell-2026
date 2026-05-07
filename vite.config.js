@@ -24,5 +24,5 @@ export default defineConfig({
       },
     }
   ],
-  assetsInclude: ["/*.JPG", "/*.JPEG", "/*.PNG", "/*.WEBP"],
+  assetsInclude: ["**/*.JPG", "**/*.JPEG", "**/*.PNG", "**/*.WEBP", "**/*.heic", "**/*.HEIC"],
 })
